@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Freelancini"
+    }
+  },
+  "defaultProject": "Freelancini",
+  "cli": {
+    "analytics": false
+  }
 }
