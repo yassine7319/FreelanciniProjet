@@ -11,7 +11,8 @@ import { AcceuilComponent } from './acceuil/acceuil.component';
 import { ContratComponent } from './contrat/contrat.component';
 import { ProfilFreelancerComponent } from './profil-freelancer/profil-freelancer.component';
 import { ProfilClientComponent } from './profil-client/profil-client.component';
-
+import { AjoutOffresComponent } from './ajout-offres/ajout-offres.component';
+import {FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,13 +21,15 @@ import { ProfilClientComponent } from './profil-client/profil-client.component';
     AcceuilComponent,
     ContratComponent,
     ProfilFreelancerComponent,
-    ProfilClientComponent
+    ProfilClientComponent,
+    AjoutOffresComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

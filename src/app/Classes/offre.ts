@@ -1,9 +1,16 @@
 export class Offre {
-    id_offre : number;
-    titre : String;
-    delai : Date;
-    sujet : String;
-    prix : number;
-    id_Client : number;
+    id_offre ? : String;
+    nom ? : String;
+    categorie? : String;
+    description? : String;
+    fichier ? : FileList;
+    mode_payement ? : String;
+    budget ?: number;
+    rating? : number;
+    max_horaire ?: number; 
+    min_horaire ?: number;
+    
+
+    
 
 }
